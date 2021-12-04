@@ -101,6 +101,7 @@ const plugin = (_, pluginOptions) => {
     },
 
     onChange() {
+      logger('WORKER_RESET', {});
       return runLint();
     }
 
