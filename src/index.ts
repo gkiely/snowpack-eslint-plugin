@@ -46,7 +46,7 @@ const plugin: SnowpackPluginFactory = (_, pluginOptions?: PluginOptions): Plugin
     if(resultText.length === 0){
       logger('WORKER_MSG', {msg: `No lint errors found.`})
     } else {
-      logger('WORKER_MSG', {msg: resultText})
+      logger('WORKER_MSG', {msg: resultText.replace('\n', '')})
     }
   }
 
