@@ -85,7 +85,7 @@ const plugin = (_, pluginOptions) => {
       });
     } else {
       logger('WORKER_MSG', {
-        msg: resultText
+        msg: resultText.replace('\n', '')
       });
     }
   };
